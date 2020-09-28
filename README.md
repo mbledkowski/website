@@ -1,2 +1,2 @@
-# Maciej Błędkowski's about and portfolio
-### mbledkowski.github.io
+# Maciej Błędkowski's portfolio / about / blog
+### [mbledkowski.github.io](https://mbledkowski.github.io)
