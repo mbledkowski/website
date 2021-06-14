@@ -1,2 +1,24 @@
-# Maciej Błędkowski's portfolio / about / blog
-### [mbledkowski.github.io](https://mbledkowski.github.io)
+# mbledkowskisite
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
