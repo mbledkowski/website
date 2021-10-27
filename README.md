@@ -7,5 +7,5 @@
 
 ## License (SPDX)
 - website's code - MIT
-- blog posts - CC-BY-4.0
+- blog posts - CC-BY-4.0 (unless specified otherwise)
 - home page ('/') text, about page ('/about') text, anything other - CC-BY-ND-4.0
