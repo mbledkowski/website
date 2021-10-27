@@ -23,5 +23,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Dependabot Auto Merge
-        uses: ahmadnassri/action-dependabot-auto-merge@latest
+        uses: ahmadnassri/action-dependabot-auto-merge@2.3.1
 
