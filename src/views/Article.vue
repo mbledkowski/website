@@ -10,19 +10,23 @@ div#about.win98popup.shadow
 </template>
 <script lang="ts">
 import MarkdownIt from 'markdown-it'
+import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const md = new MarkdownIt()
 
-let mdfile = ''
+const mdfile = ref('')
 
 export default ({
   setup() {
     const route = useRoute()
-    fetch(`../posts/${route.params.articleName}.md`).then(response => response.text()).then((element: string) => { mdfile = element })
+    fetch(`../posts/${route.params.articleName}.md`).then(response => response.text()).then(element => { mdfile.value = element })
+    return { mdfile }
   },
   computed: {
-    result() { return md.render(mdfile) },
+    result() {
+      return md.render(mdfile.value)
+    },
   },
 })
 </script>
