@@ -7,9 +7,9 @@ div#home.win98popup.shadow
         path(d='M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z')
   section
     p
-      | Front-end developer. Looking for a part-time job.
+      | Front-end developer. Looking for a full-time (or part-time) job.
       br
-      | Student at Gda&nacute;sk University of Technology.
+      | Student at WSB University in Gda&nacute;sk.
   .buttons
     a(href='https://github.com/mbledkowski' target='_blank' rel='noopener')
       span.button.shadow
