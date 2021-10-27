@@ -6,6 +6,6 @@
 - Lints and fixes files - `yarn lint`
 
 ## License (SPDX)
-- website's code - MIT
+- website's code - GPL-3.0-or-later
 - blog posts - CC-BY-4.0 (unless specified otherwise)
 - home page ('/') text, about page ('/about') text, anything other - CC-BY-ND-4.0
