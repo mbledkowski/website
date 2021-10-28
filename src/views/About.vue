@@ -12,20 +12,29 @@ div#about.win98popup.shadow
         | Front-end / Full-stack web developer.
         | Passionate programmer.
         br
-        | Student at Gdańsk University of Technology.
+        | Student at WSB University in Gda&nacute;sk.
       h2 Projects:
       ul#projects
         li
-          b dnidomatury.pl
+          a(href="https://github.com/mbledkowski/keycomp")
+            b keycomp.co
+          |  - website about switches for mechanical keyboards
+          br
+          | vuejs, nodejs, pug, scss, typescript, chartjs
+        li
+          a(href="https://github.com/mbledkowski/dnidomatury")
+            b dnidomatury.pl
           |  - informations about matura exam
           br
           | expressjs, nodejs, pug, scss, javascript
         li
-          b password generator
+          a(href="https://github.com/mbledkowski/password_generator")
+            b password generator
           br
           | python, tkinter
         li
-          b mbledkowski.github.io
+          a(href="https://github.com/mbledkowski/mble.dk")
+            b mble.dk
           |  - Maciej Błędkowski's website
           br
           | vue, nodejs, pug, scss, typescript
