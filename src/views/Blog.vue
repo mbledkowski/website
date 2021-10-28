@@ -39,6 +39,11 @@ export default ({
       items: [
         { title: '[Writeup] FluxCloud Serverless - Hack.lu 2020', date: new Date('26 October 2020'), address: 'fluxcloud-serverless-hacklu-2020' },
         { title: '[Writeup] Callboy - Hack.lu 2020', date: new Date('26 October 2020'), address: 'callboy-hacklu-2020' },
+        { title: '[Writeup] Cubes - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'cubes-heroctf-2021' },
+        { title: '[Writeup] Ping Pong - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'ping-pong-heroctf-2021' },
+        { title: '[Writeup] Record - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'record-heroctf-2021' },
+        { title: '[Writeup] Russian Doll - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'russian-doll-heroctf-2021' },
+        { title: '[Writeup] You Should Die - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'you-should-die-heroctf-2021' },
       ],
     }
   },
