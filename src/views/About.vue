@@ -28,6 +28,12 @@ div#about.win98popup.shadow
           br
           | expressjs, nodejs, pug, scss, javascript
         li
+          a(href="https://github.com/ajayyy/SponsorBlock/graphs/contributors")
+            b SponsorBlock extension
+          | - front-end for pop-up panel
+          br
+          | html, css, typescript
+        li
           a(href="https://github.com/mbledkowski/password_generator")
             b password generator
           br
