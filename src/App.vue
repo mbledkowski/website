@@ -15,6 +15,7 @@ router-view
   justify-content: space-between;
   max-height: calc(100% - 30px);
   width: fit-content;
+  max-width: 100%;
   white-space: nowrap;
   align-items: center;
   font-family: "Microsoft Sans Serif", sans-serif;
@@ -126,6 +127,7 @@ section {
 }
 
 main.scroll {
+  width: 100%;
   overflow-y: scroll;
 }
 

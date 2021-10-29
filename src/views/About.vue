@@ -123,7 +123,7 @@ div#about.win98popup.shadow
 <style lang="scss">
 #about section {
   align-items: flex-start;
-  p{
+  p {
     text-align: left;
   }
 }
