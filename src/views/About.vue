@@ -20,7 +20,7 @@ div#about.win98popup.shadow
             b keycomp.co
           |  - website about switches for mechanical keyboards
           br
-          | vuejs, nodejs, pug, scss, typescript, chartjs
+          | vuejs, nodejs, pug, scss, typescript, chartjs, python, supabase
         li
           a(href="https://github.com/mbledkowski/dnidomatury")
             b dnidomatury.pl
@@ -30,7 +30,7 @@ div#about.win98popup.shadow
         li
           a(href="https://github.com/ajayyy/SponsorBlock/graphs/contributors")
             b SponsorBlock extension
-          | - front-end for pop-up panel
+          |  - front-end for pop-up panel
           br
           | html, css, typescript
         li
@@ -39,11 +39,21 @@ div#about.win98popup.shadow
           br
           | python, tkinter
         li
+          a(href="https://github.com/hspsh/biblioteka")
+            b Library system for Hackerspace Pomorze
+          | docker, docker-compose, css, koha
+        li
           a(href="https://github.com/mbledkowski/mble.dk")
             b mble.dk
           |  - Maciej Błędkowski's website
           br
-          | vue, nodejs, pug, scss, typescript
+          | vuejs, nodejs, pug, scss, typescript
+        li
+          a(href="https://www.youtube.com/channel/UCGHvNRuAi9et6u_ssUxqLPQ")
+            b HQ265
+          |  - technological/tutorial youtube channel
+          br
+          | Affinity Photo/Designer, DaVinci Resolve, HitFilm Express, kdenlive
       h2 Skills:
       h3 HTML & PUG:
       ul
@@ -63,7 +73,7 @@ div#about.win98popup.shadow
         li transform (translate, rotate, scale, skew)
         li transition
         li position
-        li display, flexbox
+        li display, flexbox, grid
         li @media
         li sass and scss pre-processors
       h3
@@ -98,11 +108,18 @@ div#about.win98popup.shadow
           |  - Proficient (April 2020)
       h3 Git & GitHub:
       ul
-        li how to pull, push and commit changes using git
+        li pull, push and commit changes using git
         li how to manage branches and switch between them using git
-        li how to use git stash, git reset
-        li how to manage repositories on github, gitlab, and bitbucket
-        li how to createa and manage with pull requests, issues on github
+        li git stash, git reset
+        li git status, git log
+        li manage repositories on github, gitlab, and bitbucket
+        li create and manage with pull requests, issues on github
+      h2 Languages:
+      h3 Polish
+        | - native
+      h3 English
+        | - C1
+
 </template>
 <style lang="scss">
 #about section {
