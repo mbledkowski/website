@@ -99,6 +99,7 @@ div#about.win98popup.shadow
         li expressjs framework
         li vuejs framework
         li nodejs api
+        li yarn / npm
       h3 Git & GitHub:
       ul
         li pull, push and commit changes using git
