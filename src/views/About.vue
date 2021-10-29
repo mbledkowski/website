@@ -121,6 +121,8 @@ div#about.win98popup.shadow
           b Linux / Unix
         li
           b Chromium/Firefox DevTools
+        li
+          b Netlify; Google Cloud Platform; Supabase (open-source Firebase alternative)
       h2 Languages:
       h3 Polish: native
       h3 English: C1
