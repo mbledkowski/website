@@ -7,9 +7,9 @@ div#home.win98popup.shadow
         path(d='M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z')
   section
     p
-      | Front-end developer. Looking for a full-time (or part-time) job.
+      | Front-end developer. Linux and open-source enthusiast.
       br
-      | Student at WSB University in Gda&nacute;sk.
+      | Student of Computer Science at WSB University in Gda&nacute;sk.
   .buttons
     a(href='https://github.com/mbledkowski' target='_blank' rel='noopener')
       span.button.shadow
@@ -17,7 +17,7 @@ div#home.win98popup.shadow
         p
           u G
           | itHub
-    a(href='https://linkedin.com/in/mbledkowski' target='_blank' rel='noopener')
+    a(href='https://linkedin.com/in/mbled' target='_blank' rel='noopener')
       span.button.shadow
         img(src='/img/outline.svg' alt='' width='66.9' height='15')
         p

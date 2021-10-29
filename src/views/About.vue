@@ -16,15 +16,15 @@ div#about.win98popup.shadow
       h2 Projects:
       ul#projects
         li
-          a(href="https://github.com/mbledkowski/keycomp")
+          a(href="https://keycomp.co")
             b keycomp.co
           |  - website about switches for mechanical keyboards
           br
-          | vuejs, nodejs, pug, scss, typescript, chartjs, python, supabase
+          | vuejs, nodejs, pug, scss, typescript, chartjs, python, postgres, supabase
         li
           a(href="https://github.com/mbledkowski/dnidomatury")
-            b dnidomatury.pl
-          |  - informations about matura exam
+            b dni do matury
+          |  - information about matura exam
           br
           | expressjs, nodejs, pug, scss, javascript
         li
@@ -34,15 +34,21 @@ div#about.win98popup.shadow
           br
           | html, css, typescript
         li
+          a(href="https://github.com/hspsh/biblioteka")
+            b Library system for Hackerspace Pomorze
+          br
+          | docker, docker-compose, css, koha
+        li
           a(href="https://github.com/mbledkowski/password_generator")
             b password generator
           br
           | python, tkinter
         li
-          a(href="https://github.com/hspsh/biblioteka")
-            b Library system for Hackerspace Pomorze
+          a(href="https://github.com/mbledkowski/barcode2book")
+            b Barcode2Book
+          | - fetches book information from google api
           br
-          | docker, docker-compose, css, koha
+          | python
         li
           a(href="https://github.com/mbledkowski/mble.dk")
             b mble.dk
@@ -91,9 +97,57 @@ div#about.win98popup.shadow
         li service worker (offline support)
         li es2016+ features
         li expressjs framework
+        li vuejs framework
         li nodejs api
-      h4
-        | Pluralsight scores:
+      h3 Git & GitHub:
+      ul
+        li pull, push and commit changes using git
+        li how to manage branches and switch between them using git
+        li git stash, git reset
+        li git status, git log
+        li manage repositories on github, gitlab, and bitbucket
+        li create and manage with pull requests, issues on github
+      h3 Other:
+      ul
+        li
+          b SQL
+        li
+          b Python
+        li
+          b C++
+          |  (basics)
+        li
+          b Linux / Unix
+        li
+          b Chromium/Firefox DevTools
+      h2 Languages:
+      h3 Polish: native
+      h3 English: C1
+      h2 Courses / Certificates:
+      h3 LinkedIn Learning:
+      ul
+        li
+          b Building a Website with Node.js and Express.js
+          |  - January 2019
+      h3 FrontendMasters.com:
+      ul
+        li
+          b Introduction to Vue 3
+      h3 SoloLearn:
+      ul
+        li
+          b JavaScript
+          |  - 12 November 2018
+        li
+          b HTML
+          |  - 10 February 2020
+        li
+          b CSS
+          |  - 27 August 2020
+        li
+          b SQL
+          |  - 28 August 2020
+      h3 Pluralsight scores:
       ul
         li
           b HTML5: IQ 205
@@ -107,17 +161,17 @@ div#about.win98popup.shadow
         li
           b JavaScript: IQ 138
           |  - Proficient (April 2020)
-      h3 Git & GitHub:
+      h2 Profiles:
+      a(href="https://stackoverflow.com/users/10492295")
+        h3 StackOverflow
       ul
-        li pull, push and commit changes using git
-        li how to manage branches and switch between them using git
-        li git stash, git reset
-        li git status, git log
-        li manage repositories on github, gitlab, and bitbucket
-        li create and manage with pull requests, issues on github
-      h2 Languages:
-      h3 Polish: native
-      h3 English: C1
+        li 414 points
+        li 5 silver badges; 20 bronze badges
+      a(href="https://www.codewars.com/users/mbled")
+        h3 Codewars - @mbled
+      ul
+        li 4 kyu
+        li 514 honor
 
 </template>
 <style lang="scss">
