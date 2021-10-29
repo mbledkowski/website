@@ -29,7 +29,7 @@ div#about.win98popup.shadow
           | expressjs, nodejs, pug, scss, javascript
         li
           a(href="https://github.com/ajayyy/SponsorBlock/graphs/contributors")
-            b SponsorBlock extension
+            b Front-end for SponsorBlock extension
           |  - front-end for pop-up panel
           br
           | html, css, typescript
@@ -41,6 +41,7 @@ div#about.win98popup.shadow
         li
           a(href="https://github.com/hspsh/biblioteka")
             b Library system for Hackerspace Pomorze
+          br
           | docker, docker-compose, css, koha
         li
           a(href="https://github.com/mbledkowski/mble.dk")
@@ -115,10 +116,8 @@ div#about.win98popup.shadow
         li manage repositories on github, gitlab, and bitbucket
         li create and manage with pull requests, issues on github
       h2 Languages:
-      h3 Polish
-        | - native
-      h3 English
-        | - C1
+      h3 Polish: native
+      h3 English: C1
 
 </template>
 <style lang="scss">
