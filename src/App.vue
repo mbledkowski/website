@@ -16,7 +16,6 @@ router-view
   max-height: calc(100% - 30px);
   width: fit-content;
   max-width: 100%;
-  white-space: nowrap;
   align-items: center;
   font-family: "Microsoft Sans Serif", sans-serif;
   background: #c2c6ca;
@@ -116,7 +115,7 @@ router-view
   background: #5aa;
 }
 
-section {
+article {
   margin: 16px;
   display: flex;
   flex-flow: column nowrap;

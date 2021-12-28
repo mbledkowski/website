@@ -3,10 +3,10 @@ div#about.win98popup.shadow
   header.bar
     p Blog - Article
     router-link(to='/blog').button.shadow
-        svg(xmlns='http://www.w3.org/2000/svg' width='8px' height='7px' viewbox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2')
-          path(d='M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z')
+      svg(xmlns='http://www.w3.org/2000/svg' width='8px' height='7px' viewbox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2')
+        path(d='M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z')
   main.scroll
-    section(v-html="result")
+    article(v-html="result")
 </template>
 <script lang="ts">
 import MarkdownIt from 'markdown-it'
@@ -32,10 +32,15 @@ export default ({
 })
 </script>
 <style lang="scss">
-#about section {
+#about article {
   align-items: flex-start;
+  max-width: 768px;
   p {
     text-align: left;
+  }
+  img {
+    display: block;
+    max-width: 512px;
   }
 }
 </style>

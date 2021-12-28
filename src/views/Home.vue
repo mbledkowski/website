@@ -5,7 +5,7 @@ div#home.win98popup.shadow
     span.button.shadow
       svg(xmlns='http://www.w3.org/2000/svg' width='8px' height='7px' viewbox='0 0 8 7' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2')
         path(d='M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z')
-  section
+  article
     p
       | Front-end developer. Linux and open-source enthusiast. Colemak user.
       br
@@ -68,7 +68,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-#home > section > p {
+#home > article > p {
   margin: 0;
 }
 </style>
