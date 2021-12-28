@@ -20,6 +20,7 @@ const mdfile = ref('')
 export default ({
   setup() {
     const route = useRoute()
+    mdfile.value = 'Loading...'
     fetch(`../posts/${route.params.articleName}.md`).then(response => response.text()).then(element => { mdfile.value = element })
     return { mdfile }
   },
