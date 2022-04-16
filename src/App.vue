@@ -161,31 +161,31 @@ ul#projects > li{
   background: #C2C6CA;
 }
 ::-webkit-scrollbar-track {
-  background-image: url('/img/scrollbartrack.svg');
+  background-image: url('./img/scrollbartrack.svg');
   image-rendering: pixelated;
   background-size: 2px 2px;
 }
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement {
-    background-image: url('/img/uparrow.svg');
+    background-image: url('./img/uparrow.svg');
     background-size: 7px 4px;
 }
 
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: url('/img/downarrow.svg');
+  background-image: url('./img/downarrow.svg');
   background-size: 7px 4px;
 }
 
 /* Left */
 ::-webkit-scrollbar-button:horizontal:decrement {
-  background-image: url('/img/leftarrow.svg');
+  background-image: url('./img/leftarrow.svg');
   background-size: 4px 7px;
 }
 
 /* Right */
 ::-webkit-scrollbar-button:horizontal:increment {
-  background-image: url('/img/rightarrow.svg');
+  background-image: url('./img/rightarrow.svg');
   background-size: 4px 7px;
 }
 </style>
