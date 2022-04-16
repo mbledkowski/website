@@ -13,6 +13,12 @@ div#about.win98popup.shadow
         | Passionate programmer.
         br
         | Student at WSB University in Gda&nacute;sk.
+      p 
+        span Public email:
+        a(href="mailto://pub@mble.dk") pub@mble.dk
+      p
+        span GPG key: 
+        a(href="/pgp.txt") 9A6234359E5827E2
       h2 Projects:
       ul#projects
         li
