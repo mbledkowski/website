@@ -44,7 +44,7 @@ export default ({
         { title: '[Writeup] Record - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'record-heroctf-2021' },
         { title: '[Writeup] Russian Doll - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'russian-doll-heroctf-2021' },
         { title: '[Writeup] You Should Die - Heroctf.fr 2021', date: new Date('26 April 2021'), address: 'you-should-die-heroctf-2021' },
-        { title: 'Listening to Spotify fully open-source way', date: new Date('12 May 2022'), address: 'spotify-open-source-way' },
+        { title: 'Listening to Spotify fully open-source way', date: new Date('11 May 2022'), address: 'spotify-open-source-way' },
       ],
     }
   },
