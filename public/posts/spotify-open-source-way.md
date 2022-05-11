@@ -23,6 +23,7 @@ Hi, in this article I am going to show you how to listen to Spotify using only o
  6. Set `initial_volume` to a value between 0 and 100 for your initial volume
 	 1. If `spotifyd -V` shows you version lower than 0.4 use string as a value - `initial_volume = "45"`
 	 2. If it displays a version equal to or higher than 0.4 use an integer as a value - `initial_volume = 45`
+
 For example of `spotifyd.conf` you may want to check out [my dotfiles repository](https://github.com/mbledkowski/dotfiles/tree/main/global/home/mble/.config/spotifyd). 
 ## Last but not least, you need to set up `spotify-qt`.
  1. Go to https://developer.spotify.com/dashboard/
