@@ -1,10 +1,10 @@
 <template>
   <div id="main">
     <nav>
-      <nuxt-link to="/#projects">Projects</nuxt-link>
-      <nuxt-link to="/#skills">Skills & CV</nuxt-link>
-      <nuxt-link to="/#blog">Blog</nuxt-link>
-      <nuxt-link to="/#contact">Contact</nuxt-link>
+      <a href="/#projects">Projects</a>
+      <a href="/#skills">Skills & CV</a>
+      <a href="/#blog">Blog</a>
+      <a href="/#contact">Contact</a>
     </nav>
     <main>
       <section>
@@ -37,13 +37,14 @@
   min-height: 100vh;
   background: url("~/assets/images/hero.jpg") no-repeat center center / cover
     fixed;
-  b.semi {
-    font-weight: 600;
-  }
   nav {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem 0;
+    width: 100%;
     z-index: 1;
     a {
       @apply text-xl text-white;
