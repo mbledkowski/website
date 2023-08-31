@@ -138,6 +138,9 @@ export default defineComponent({
         backdrop-filter: blur(7px);
         border-radius: 19px;
         padding: 1rem;
+        & > h2, & > p , & > div > h2, & > div:not(:last-child) > p {
+          margin-bottom: .5rem;
+        }
       }
       .technologies p {
         font-weight: 600;
