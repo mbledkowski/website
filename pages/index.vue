@@ -1,10 +1,15 @@
 <template>
   <div id="app">
+    <div id="nav">
+      <Nav />
+    </div>
+    <div id="site">
     <div class="component">
       <Main />
     </div>
     <div class="component">
       <Projects />
+    </div>
     </div>
   </div>
 </template>
@@ -13,7 +18,13 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-#app > .component {
+#app {
+  &> #nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+&> #site > .component {
   &:not(:first-child) {
     margin-top: -100vh;
   }
@@ -27,5 +38,6 @@ body {
   b.semi {
     font-weight: 600;
   }
+}
 }
 </style>
