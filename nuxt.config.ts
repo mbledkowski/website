@@ -1,8 +1,9 @@
-import { defineNuxtConfig } from "nuxt";
+import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ["@/assets/styles/styles.css"],
+  modules: ["@nuxtjs/tailwindcss"],
   build: {
     postcss: {
       postcssOptions: require("./postcss.config.js"),
