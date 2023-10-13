@@ -19,7 +19,7 @@
           </a>
         </div>
       </section>
-      <img src="~/assets/images/mble.png" alt="Maciej Błędkowski" />
+      <img src="~/assets/images/mble.png" alt="Photo of Maciej Błędkowski" />
     </main>
   </div>
 </template>
