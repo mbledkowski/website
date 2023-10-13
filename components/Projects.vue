@@ -17,12 +17,10 @@
             <h2>Design</h2>
             <p>{{ project.properties.design }}</p>
           </div>
-
           <div v-if="project.properties.styling !== undefined">
             <h2>Styling</h2>
             <p>{{ project.properties.styling }}</p>
           </div>
-
           <div v-if="project.properties.frontend !== undefined">
             <h2>Front-end</h2>
             <p>{{ project.properties.frontend }}</p>
@@ -131,16 +129,6 @@ export default defineComponent({
       }
       > div:last-child {
         margin-top: auto;
-      }
-      .box {
-        background: rgba(15, 17, 42, 0.4);
-        border: 3px solid rgba(13, 15, 40, 0.2);
-        backdrop-filter: blur(7px);
-        border-radius: 19px;
-        padding: 1rem;
-        & > h2, & > p , & > div > h2, & > div:not(:last-child) > p {
-          margin-bottom: .5rem;
-        }
       }
       .technologies p {
         font-weight: 600;
