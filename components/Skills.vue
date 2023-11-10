@@ -4,28 +4,16 @@
     <section v-for="section in sections" :key="section[0]">
       <h2>{{ section[1] }}</h2>
       <div class="skills">
-        <div
-          v-for="(item, index) in skills[section[0]]"
-          :key="index"
-          class="box"
-        >
+        <div v-for="(item, index) in skills[section[0]]" :key="index" class="box">
           <img :src="getImage(item[1])" :alt="item[0] + ' icon'" />
           <div class="details">
             <p>{{ item[0] }}</p>
             <div class="level">
               <div class="stars">
-                <span class="active_star" v-for="index in item[2]" :key="index"
-                  ><img src="~/assets/icons/star.svg" alt="Star"
-                /></span>
-                <span
-                  class="inactive_star"
-                  v-for="index in 5 - item[2]"
-                  :key="index"
-                  ><img
-                    src="~/assets/icons/star.svg"
-                    alt="Star"
-                    class="brightness-50"
-                /></span>
+                <span class="active_star" v-for="index in item[2]" :key="index"><img src="~/assets/icons/star.svg"
+                    alt="Star" /></span>
+                <span class="inactive_star" v-for="index in 5 - item[2]" :key="index"><img src="~/assets/icons/star.svg"
+                    alt="Star" class="brightness-50" /></span>
               </div>
               <p>{{ levels[Number(item[2]) - 1] }}</p>
             </div>
@@ -40,7 +28,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Projects",
+  name: "Skills",
   data() {
     interface Skills {
       [key: string]: [string, string, number][];
@@ -124,17 +112,19 @@ export default defineComponent({
 <style lang="scss" scoped>
 #skills {
   padding: 6rem 8rem;
-  background: url("~/assets/images/bg01.jpg") no-repeat center center / cover
-    fixed;
+  background: url("~/assets/images/bg01.jpg") no-repeat center center / cover fixed;
 }
+
 h1 {
   grid-column: 1 / 3;
   padding-bottom: 4rem;
   @apply text-3xl text-white;
+
   b {
     font-weight: 600;
   }
 }
+
 h2 {
   @apply text-white text-base;
 }
@@ -142,40 +132,48 @@ h2 {
 p {
   @apply text-white text-base;
 }
+
 .skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  > div {
+
+  >div {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 1rem 1rem 0;
     min-width: 400px;
-    > img {
+
+    >img {
       width: 6rem;
       height: 6rem;
       margin-right: 1rem;
       border-radius: 22.5%;
     }
+
     .details {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: flex-start;
-      > p {
+
+      >p {
         margin-bottom: 0.5rem;
         font-weight: 600;
       }
-      > .level,
-      > .level > .stars {
+
+      >.level,
+      >.level>.stars {
         display: flex;
         flex-flow: row nowrap;
         @apply text-white text-sm;
       }
-      > .level > .stars {
+
+      >.level>.stars {
         margin: calc(0.75rem / 2) 0.5rem calc(0.75rem / 2) 0;
-        > span > img {
+
+        >span>img {
           width: 0.75rem;
           height: 0.75rem;
         }
