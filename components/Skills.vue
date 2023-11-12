@@ -143,7 +143,7 @@ p {
     flex-flow: row nowrap;
     align-items: center;
     margin: 0 1rem 1rem 0;
-    min-width: 400px;
+    width: 400px;
 
     >img {
       width: 6rem;

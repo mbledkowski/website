@@ -64,7 +64,7 @@ body {
     background: rgba(15, 17, 42, 0.4);
     border: 3px solid rgba(13, 15, 40, 0.2);
     backdrop-filter: blur(7px);
-    border-radius: 19px;
+    border-radius: 20px;
     padding: 1rem;
 
     &>h2,
@@ -74,4 +74,5 @@ body {
       margin-bottom: 0.5rem;
     }
   }
-}</style>
+}
+</style>
