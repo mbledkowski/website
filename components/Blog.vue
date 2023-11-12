@@ -1,7 +1,12 @@
 <template>
-  <div v-for="post in posts"><img :src="post.imgUrl" :alt="'Image for &quot;' + post.title + '&quot; article'" />
-    <p>{{ post.title }}</p>
-    <div>{{ post.preview }} <a :href="post.url">Read More</a></div>
+  <div id="blog">
+    <div class="blog-post" v-for="post in posts">
+      <img :src="post.imgUrl" :alt="'Image for &quot;' + post.title + '&quot; article'" />
+      <div class="box">
+        <p>{{ post.title }}</p>
+        <div>{{ post.preview }} <a :href="post.url">Read More</a></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -36,7 +41,6 @@ export default defineComponent({
             preview: post.description,
             url: post.url,
           })
-          console.log(posts, post)
         }
       })
     return { posts };
@@ -44,3 +48,35 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+#blog {
+  .blog-post {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 1rem 1rem 0;
+
+    >img {
+      height: calc(21rem / 2);
+      width: calc(50rem / 2);
+      border-radius: 20px 0 0 20px;
+    }
+
+    .box {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      width: 100%;
+      color: white;
+
+      >p,
+      >div>a {
+        font-weight: 600;
+      }
+    }
+  }
+}
+</style>
