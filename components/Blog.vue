@@ -1,5 +1,6 @@
 <template>
   <div id="blog">
+    <Titlebar title="Blog" />
     <div class="blog-post" v-for="post in posts">
       <img :src="post.imgUrl" :alt="'Image for &quot;' + post.title + '&quot; article'" />
       <div class="box">
