@@ -1,14 +1,12 @@
 <template>
   <div id="projects">
-    <div v-for="(project, index) in projects" class="project" :key="index">
+    <section v-for="(project, index) in projects" class="project" :key="index">
       <Titlebar title="Projects" :subtitle="project.title" />
-      <main>
+      <article>
         <div class="page-number">
           <span class="main">
             <b v-if="index < 10">0{{ index + 1 }}</b>
-            <b v-else>{{ index + 1 }}</b
-            >/</span
-          >
+            <b v-else>{{ index + 1 }}</b>/</span>
           <span v-if="projects.length < 10">0{{ projects.length }}</span>
           <span v-else>{{ projects.length }}</span>
         </div>
@@ -40,27 +38,19 @@
             <i>{{ project.description }}</i>
           </p>
           <div class="links">
-            <a v-if="project.link !== undefined" :href="project.link"
-              ><img src="~/assets/icons/web.svg" alt="Website"
-            /></a>
-            <a :href="project.github"
-              ><img src="~/assets/icons/github.svg" alt="GitHub"
-            /></a>
+            <a v-if="project.link !== undefined" :href="project.link"><img src="~/assets/icons/web.svg"
+                alt="Website" /></a>
+            <a :href="project.github"><img src="~/assets/icons/github.svg" alt="GitHub" /></a>
             <p>
               <b class="semi">{{ project.license }}</b>
             </p>
           </div>
         </div>
-      </main>
+      </article>
       <aside class="images" v-if="project.images !== undefined">
-        <img
-          v-for="(image, index) in project.images"
-          :src="image.src"
-          :alt="image.alt"
-          :key="index"
-        />
+        <img v-for="(image, index) in project.images" :src="image.src" :alt="image.alt" :key="index" />
       </aside>
-    </div>
+    </section>
   </div>
 </template>
 <script lang="ts">
@@ -111,36 +101,43 @@ export default defineComponent({
 <style lang="scss" scoped>
 #projects {
   padding: 0 8rem 6rem;
-  background: url("~/assets/images/bg00.jpg") no-repeat center center / cover
-    fixed;
+  background: url("~/assets/images/bg00.jpg") no-repeat center center / cover fixed;
+
   .project {
     padding-top: 6rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: min-content 1fr;
     min-height: calc(100vh - 12rem);
-    main {
+
+    article {
       display: flex;
       flex-flow: column nowrap;
       min-height: calc(100vh - 18.25rem);
       @apply text-white text-base;
-      > div:not(:last-child) {
+
+      >div:not(:last-child) {
         margin-bottom: 1rem;
       }
-      > div:last-child {
+
+      >div:last-child {
         margin-top: auto;
       }
+
       .technologies p {
         font-weight: 600;
       }
-      .page-number > .main {
+
+      .page-number>.main {
         @apply text-xl;
       }
+
       .links {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         margin: 0.5rem 0 0;
+
         a {
           margin-right: 0.75rem;
         }

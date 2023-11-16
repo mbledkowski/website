@@ -19,7 +19,7 @@
           </a>
         </div>
       </section>
-      <img src="~/assets/images/mble.png" alt="Photo of Maciej Błędkowski" />
+      <img src="~/assets/images/mble.png" alt="Portrait of Maciej Błędkowski" />
     </main>
   </div>
 </template>
@@ -29,12 +29,13 @@
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
-  background: url("~/assets/images/hero.jpg") no-repeat center center / cover
-    fixed;
+  background: url("~/assets/images/hero.jpg") no-repeat center center / cover fixed;
+
   main {
     display: flex;
     flex-flow: row nowrap;
     margin: auto 0;
+
     section {
       display: flex;
       flex-flow: column nowrap;
@@ -42,35 +43,44 @@
       align-items: flex-start;
       margin: auto 0 auto 8rem;
     }
-    & > img {
+
+    &>img {
       width: 50vw;
       position: absolute;
       right: 0;
       bottom: 0;
     }
+
     h2,
     h3 {
       @apply text-white;
     }
+
     h2 {
       @apply text-7xl font-black;
+
       u {
         text-decoration: solid underline #55aaaa 0.5rem;
       }
     }
+
     h3 {
       @apply text-3xl;
     }
+
     h2,
     h3,
     #social {
       margin-bottom: 1rem;
     }
+
     #social {
       display: flex;
       flex-flow: row nowrap;
+
       a {
         margin-right: 0.75rem;
+
         img {
           width: 1.5rem;
           height: 1.5rem;
@@ -78,5 +88,4 @@
       }
     }
   }
-}
-</style>
+}</style>
