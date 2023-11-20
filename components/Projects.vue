@@ -100,6 +100,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 #projects {
+  min-height: 100svh;
   padding: 0 8rem 6rem;
   background: url("~/assets/images/bg00.jpg") no-repeat center center / cover fixed;
 

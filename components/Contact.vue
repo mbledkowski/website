@@ -1,18 +1,20 @@
 <template>
   <div id="contact">
     <Titlebar title="Contact" />
-    <section v-for="section in sections" :key="section[0]">
-      <h2>{{ section[1] }}</h2>
-      <div class="badges">
-        <div v-for="(contact, index) in contactOptions[section[0]]" :key="index" class="box badge">
-          <img :src="getImage(namesAndIcons[contact.type][1])" :alt="namesAndIcons[contact.type][0] + ' icon'" />
-          <div class="details">
-            <p>{{ namesAndIcons[contact.type][0] + " · " }}<b>{{ contact.name }}</b></p>
-            <p><b>{{ contact.value }}</b></p>
+    <article>
+      <section v-for="section in sections" :key="section[0]">
+        <h2>{{ section[1] }}</h2>
+        <div class="badges">
+          <div v-for="(contact, index) in contactOptions[section[0]]" :key="index" class="box badge">
+            <img :src="getImage(namesAndIcons[contact.type][1])" :alt="namesAndIcons[contact.type][0] + ' icon'" />
+            <div class="details">
+              <p>{{ namesAndIcons[contact.type][0] + " · " }}<b>{{ contact.name }}</b></p>
+              <p><b>{{ contact.value }}</b></p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   </div>
 </template>
 
@@ -98,4 +100,10 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+#contact {
+  min-height: 100svh;
+  padding: 6rem 8rem;
+  background: url("~/assets/images/bg02.jpg") no-repeat center center / cover fixed;
+}
+</style>

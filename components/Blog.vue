@@ -1,13 +1,13 @@
 <template>
   <div id="blog">
     <Titlebar title="Blog" />
-    <div class="blog-post" v-for="post in posts">
+    <section class="blog-post" v-for="post in posts">
       <img :src="post.imgUrl" :alt="'Image for &quot;' + post.title + '&quot; article'" />
       <div class="box">
         <p>{{ post.title }}</p>
         <div>{{ post.preview }} <a :href="post.url">Read More</a></div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -52,6 +52,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 #blog {
+  min-height: 100svh;
+  padding: 6rem 8rem;
+  background: url("~/assets/images/bg02.jpg") no-repeat center center / cover fixed;
+
   .blog-post {
     display: flex;
     flex-flow: row nowrap;

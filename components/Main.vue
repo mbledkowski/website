@@ -28,7 +28,7 @@
 #main {
   display: flex;
   flex-flow: column nowrap;
-  min-height: 100vh;
+  min-height: 100svh;
   background: url("~/assets/images/hero.jpg") no-repeat center center / cover fixed;
 
   main {
@@ -88,4 +88,5 @@
       }
     }
   }
-}</style>
+}
+</style>

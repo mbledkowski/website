@@ -111,6 +111,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 #skills {
+  min-height: 100svh;
   padding: 6rem 8rem;
   background: url("~/assets/images/bg01.jpg") no-repeat center center / cover fixed;
 }
