@@ -1,3 +1,9 @@
 [submodule "personal"]
 	path = personal
 	url = git@github.com:mbledkowski/personal.git
+[submodule "public/pressgothicpro"]
+	path = public/pressgothicpro
+	url = git@github.com:mbledkowski/pressgothicpro_font
+[submodule "public/urwgeometric"]
+  path = public/urwgeometric
+  url = git@github.com:mbledkowski/urwgeometric_font
