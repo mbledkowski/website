@@ -18,15 +18,15 @@
           </p>
           <div id="social" class="mt-4">
             <a v-if="data.social.linkedin" :href="data.social.linkedin.link"
-              :title="data.social.linkedin.name + ': ' + data.social.linkedin.username">
+              :title="'LinkedIn: ' + data.social.linkedin.username">
               <Icon name="cib:linkedin" size="1.5em" />
             </a>
             <a v-if="data.social.github" :href="data.social.github.link"
-              :title="data.social.github.name + ': ' + data.social.github.username">
+              :title="'GitHub: ' + data.social.github.username">
               <Icon name="cib:github" size="1.5em" />
             </a>
             <a v-if="data.social.stackoverflow" :href="data.social.stackoverflow.link"
-              :title="data.social.stackoverflow.name + ': ' + data.social.stackoverflow.username">
+              :title="'Stack Overflow: ' + data.social.stackoverflow.username">
               <Icon name="cib:stackoverflow" size="1.5em" />
             </a>
           </div>
