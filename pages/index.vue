@@ -1,12 +1,12 @@
 <template>
   <div id="page-index">
     <div
-      class="hero grid-rows-[4rem_minmax(600px,_1fr)_4rem] md:grid-rows-[4rem_minmax(400px,_1fr)_4rem] gap-8 p-8 min-h-screen sm:bg-gradient-to-r from-[#11998e] to-[#38ef7d]">
+      class="hero grid-rows-[4em_minmax(600px,_1fr)_4em] md:grid-rows-[4em_minmax(400px,_1fr)_4em] gap-8 p-2 py-8 sm:p-8 min-h-screen sm:bg-gradient-to-r from-[#11998e] to-[#38ef7d]">
       <div
         class="hero-content row-start-2 flex-col lg:flex-row-reverse sm:mx-16 sm:bg-base-100 sm:rounded-2xl sm:shadow-2xl">
         <NuxtImg class="sm:max-w-sm rounded-lg w-10/12 max-w-fit shadow-lg sm:shadow-2xl sm:m-8"
           :src="'/personal/' + data.image" alt="Photo of Maciej Błędkowski" />
-        <div class="my-0 sm:my-8 md:mx-8 lg:ml-8 lg:mx-0">
+        <div class="my-0 mx-2 sm:mx-4 sm:my-8 md:mx-8 lg:ml-8 lg:mx-0">
           <h1 class="text-5xl mb-2 sm:text-8xl lg:text-9xl font-medium sm:mb-4 pressgothicpro">
             {{ data.name }}
           </h1>
@@ -17,26 +17,35 @@
             {{ data.pronouns }}
           </p>
           <div id="social" class="mt-4">
-            <Icon name="cib:linkedin" size="1.5em" />
-            <Icon name="cib:github" size="1.5em" />
-            <Icon name="cib:stackoverflow" size="1.5em" />
+            <a v-if="data.social.linkedin" :href="data.social.linkedin.link"
+              :title="data.social.linkedin.name + ': ' + data.social.linkedin.username">
+              <Icon name="cib:linkedin" size="1.5em" />
+            </a>
+            <a v-if="data.social.github" :href="data.social.github.link"
+              :title="data.social.github.name + ': ' + data.social.github.username">
+              <Icon name="cib:github" size="1.5em" />
+            </a>
+            <a v-if="data.social.stackoverflow" :href="data.social.stackoverflow.link"
+              :title="data.social.stackoverflow.name + ': ' + data.social.stackoverflow.username">
+              <Icon name="cib:stackoverflow" size="1.5em" />
+            </a>
           </div>
         </div>
       </div>
-      <nav class="row-start-3 urwgeometric font-bold">
+      <nav class="row-start-3 urwgeometric font-bold sticky top-0">
         <ul class="menu bg-base-200 items-center menu-horizontal rounded-badge">
           <li>
-            <a class="rounded-badge">
+            <a class="rounded-badge" @click="section = 'projects'">
               Projects
             </a>
           </li>
           <li>
-            <a class="rounded-badge">
+            <a class="rounded-badge" @click="section = 'timeline'">
               Timeline
             </a>
           </li>
           <li>
-            <a class="special-button max-h-[46px]">
+            <a class="special-button max-h-[46px]" @click="section = 'contact'">
               Contact & CV
               <div class="special-button-hover-effect">
                 <div></div>
@@ -46,15 +55,21 @@
         </ul>
       </nav>
     </div>
+    <div id="sections">
+      <Projects v-if="section === 'projects'" :projects="data.projects" />
+      <Timeline v-if="section === 'timeline'" />
+      <Contact v-if="section === 'contact'" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const { data } = await useFetch('/api/data')
+const section = useState('section', () => 'projects')
 </script>
 
 <style scoped>
-#social span:not(:last-child) {
+#social a:not(:last-child) {
   @apply mr-2;
 }
 
