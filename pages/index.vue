@@ -57,8 +57,8 @@
     </div>
     <div id="sections">
       <Projects v-if="section === 'projects'" :projects="data.projects" />
-      <Timeline v-if="section === 'timeline'" />
-      <Contact v-if="section === 'contact'" />
+      <Timeline v-if="section === 'timeline'" :timeline="data.timeline" />
+      <Contact v-if="section === 'contact'" :email="data.email.job" />
     </div>
   </div>
 </template>
