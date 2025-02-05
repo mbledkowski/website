@@ -24,6 +24,7 @@
     "@iconify-json/fluent-color": "^1.2.3",
     "@iconify-json/material-symbols": "^1.2.12",
     "@nuxt/icon": "^1.10.0",
+    "@originjs/vite-plugin-content": "^1.0.5",
     "@primevue/nuxt-module": "^4.2.5",
     "daisyui": "^4.12.10",
     "sass": "^1.82.0"

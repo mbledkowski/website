@@ -1,13 +1,15 @@
-import fs from 'fs';
-import {parse} from 'smol-toml';
-import path from 'path';
-import url from 'url';
+// import {parse} from 'smol-toml';
+import data from '~/assets/personal/main.toml';
 
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
   try {
-    // const dataRaw = fs.readFileSync(path.resolve(__dirname, './personal/main.toml'));
-    const dataRaw = fs.readFileSync(path.relative(process.cwd(), './public/personal/main.toml'));
-    const data = parse(dataRaw.toString());
+    // const dataRaw = await useStorage('assets:server').getItem(`/personal/main.toml`)
+    // console.log(typeof dataRaw)
+    // console.log(dataRaw)
+    // if (dataRaw === null || typeof dataRaw === "number" || !(typeof dataRaw === "string" || "toString" in dataRaw)) {
+    //   throw new Error("Data has no attribute toString");
+    // }
+    // const data = parse(dataRaw.toString());
     return data;
   } catch (e) {
     console.log(e);

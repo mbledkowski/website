@@ -4,7 +4,7 @@
       :class="`card bg-base-100 w-auto my-8 shadow-xl ${index % 2 === 0 ? 'col-start-2 col-end-4' : 'col-start-1 col-end-3'} flex flex-row max-h-[420px]`">
       <a v-if="project.imgs" v-for="img in project.imgs" :key="img" :href="'/personal/'+img" target="_blank" class="max-w-[50%]">
         <figure class="rounded-xl max-h-[100%]">
-          <img :src="'/personal/blob/' + img"  alt="Image of {{project.name}}">
+          <img :src="'/personal/' + img"  alt="Image of {{project.name}}">
         </figure>
       </a>
       <div class="card-body">

@@ -5,7 +5,7 @@
       <div
         class="hero-content row-start-2 flex-col lg:flex-row-reverse sm:mx-16 sm:bg-base-100 sm:rounded-2xl sm:shadow-2xl">
         <NuxtImg class="sm:max-w-sm rounded-lg w-10/12 max-w-fit shadow-lg sm:shadow-2xl sm:m-8"
-          :src="'/personal/blob/' + data.image" alt="Photo of Maciej Błędkowski" />
+          :src="'/personal/' + data.image" alt="Photo of Maciej Błędkowski" />
         <div class="my-0 mx-2 sm:mx-4 sm:my-8 md:mx-8 lg:ml-8 lg:mx-0">
           <h1 class="text-5xl mb-2 sm:text-8xl lg:text-9xl font-medium sm:mb-4 pressgothicpro">
             {{ data.name }}

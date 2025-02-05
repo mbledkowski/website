@@ -5,7 +5,7 @@
       <div class="max-w-[50%] grid grid-cols-3 grid-rows-3" v-if="item.imgs" >
         <a v-for="(img, index) in item.imgs" :key="img" :href="'/personal/'+img" target="_blank" :class="index === 0 ? 'col-start-1 col-end-3 row-start-1 row-end-4' : 'col-start-3 col-end-4'">
           <figure class="rounded-xl max-h-[100%]">
-            <img :src="'/personal/blob/' + img"  alt="Image of {{item.name}}">
+            <img :src="'/personal/' + img"  alt="Image of {{item.name}}">
           </figure>
         </a></div>
       <div class="card-body">
