@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
 useHead({
+  title: "Maciej Błędkowski's personal website",
   link: [
     {
       rel: "stylesheet",

@@ -4,14 +4,18 @@ import content from '@originjs/vite-plugin-content'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image", "@nuxt/icon"],
+
   image: {
     quality: 96,
     format: ['avif','webp']
   },
+
   nitro: {
     rollupConfig: {
       // @ts-ignore
       plugins: [content()]
     }
-  }
+  },
+
+  compatibilityDate: "2025-02-06"
 })

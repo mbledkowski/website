@@ -35,17 +35,17 @@
       <nav class="row-start-3 urwgeometric font-bold sticky top-0">
         <ul class="menu bg-base-200 items-center menu-horizontal rounded-badge">
           <li>
-            <a class="rounded-badge" @click="section = 'projects'">
+            <a class="rounded-badge" @click="section = 'projects'; goToSections()">
               Projects
             </a>
           </li>
           <li>
-            <a class="rounded-badge" @click="section = 'timeline'">
+            <a class="rounded-badge" @click="section = 'timeline'; goToSections()">
               Timeline
             </a>
           </li>
           <li>
-            <a class="special-button max-h-[46px]" @click="section = 'contact'">
+            <a class="special-button max-h-[46px]" @click="section = 'contact'; goToSections()">
               Contact & CV
               <div class="special-button-hover-effect">
                 <div></div>
@@ -55,7 +55,7 @@
         </ul>
       </nav>
     </div>
-    <div id="sections">
+    <div id="sections" ref="sections">
       <Projects v-if="section === 'projects'" :projects="data.projects" />
       <Timeline v-if="section === 'timeline'" :timeline="data.timeline" />
       <Contact v-if="section === 'contact'" :email="data.email.job" />
@@ -64,8 +64,15 @@
 </template>
 
 <script setup lang="ts">
+import { useTemplateRef } from 'vue'
+
 const { data } = await useFetch('/api/data')
 const section = useState('section', () => 'projects')
+const el = useTemplateRef('sections')
+function goToSections() {
+  window.scrollTo(0, el.value.offsetTop - 128)
+}
+
 </script>
 
 <style scoped>
