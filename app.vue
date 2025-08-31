@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtPage />
+    <NuxtPage/>
   </div>
 </template>
 
@@ -15,6 +15,13 @@ useHead({
     {
       rel: "stylesheet",
       href: "/urwgeometric/stylesheet.css"
+    }
+  ],
+  script: [
+    {
+      defer: true,
+      src: "https://cloud.umami.is/script.js",
+      "data-website-id": "0723f2a3-c586-4b4c-b48f-8748aa3d2fb5"
     }
   ]
 })
